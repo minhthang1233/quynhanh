@@ -1,0 +1,19 @@
+app = "chuyen-tin-nhan-1"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[build]
+  builtin = "python"  # Sử dụng buildpack Python tích hợp sẵn
+
+[env]
+  API_ID = ""
+  API_HASH = ""
+  GROUP_A_SOURCE = ""
+  GROUP_B_SOURCE = ""
+  GROUP_A_DESTINATION = ""
+  GROUP_B_DESTINATION = ""
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
